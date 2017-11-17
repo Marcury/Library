@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.LoginGuiController">
+   <children>
+      <Pane layoutX="69.0" layoutY="55.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="Login" labelFloat="true" layoutX="57.0" layoutY="74.0" prefHeight="51.0" prefWidth="265.0" promptText="Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="135.0" layoutY="277.0" onAction="#login" prefHeight="45.0" prefWidth="109.0" ripplerFill="#fbfcff" style="-fx-background-color: #2346c3;" text="Login" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="Passwd" labelFloat="true" layoutX="55.0" layoutY="158.0" promptText="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="97.0" layoutY="227.0" onAction="#forgotPassword" prefHeight="25.0" prefWidth="182.0" text="Zapomniałeś/aś hasła?" textFill="#311eda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
