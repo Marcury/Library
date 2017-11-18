@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="248.0" prefWidth="400.0" style="-fx-background-color: WHITE;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="library.controller.PassChangeGuiController">
+   <children>
+      <JFXTextField fx:id="NewPass" labelFloat="true" layoutX="57.0" layoutY="59.0" prefHeight="35.0" prefWidth="135.0" promptText="Nowe Hasło">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="NewPassRepeat" labelFloat="true" layoutX="57.0" layoutY="144.0" prefHeight="35.0" prefWidth="135.0" promptText="Powtórz Hasło">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="changePassButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="243.0" layoutY="100.0" onAction="#changePassword" prefHeight="63.0" prefWidth="100.0" ripplerFill="#34c222" style="-fx-background-color: #34c222;" text="Zapisz" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
