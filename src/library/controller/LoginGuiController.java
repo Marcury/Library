@@ -56,13 +56,20 @@ public class LoginGuiController implements Initializable{
           }else {
                     if(login.equals("login")== false)
                     {
-                        Login.setText("Wrong Login");
-                        //Login.setBackground(Background.EMPTY);
+                        
+                        Login.setPromptText("Wrong Login");
+                        Login.setStyle("-fx-background-color: #ff000092");
+                    } else {
+                        Login.setPromptText("Login");
+                        Login.setStyle("-fx-background-color: #ffffff");
                     }
                     if(password.equals("password") == false)
                     {
-                        Passwd.setText("WRong Password");
-                       // Passwd.setBackground(Background.EMPTY);
+                        Passwd.setPromptText("Wrong Password");
+                        Passwd.setStyle("-fx-background-color: #ff000092");
+                    }else{
+                        Passwd.setPromptText("Password");
+                        Passwd.setStyle("-fx-background-color: #ffffff");
                     }
               
           }
